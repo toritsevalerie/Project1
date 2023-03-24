@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.top-bar {
+  background-color: #abd373;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+  color: #fff;
+  text-transform: capitalize;
+  padding: 10px;
+}
+.top-bar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.top-bar .wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.top-bar .wrapper div p {
+  margin: 0px 10px;
+}
