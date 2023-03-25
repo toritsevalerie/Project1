@@ -5,6 +5,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  font-size: small;
   letter-spacing: 1.5px;
 }
 
@@ -37,4 +38,64 @@ body {
 }
 .top-bar .wrapper div p {
   margin: 0px 10px;
+}
+
+.navigation {
+  padding: 25px 0px;
+}
+.navigation .wrapper .navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navigation .wrapper .navigation-bar nav {
+  padding: 10px 0px;
+}
+.navigation .wrapper .navigation-bar nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.navigation .wrapper .navigation-bar nav a {
+  text-decoration: none;
+  color: black;
+  margin: 0px 10px;
+}
+.navigation .wrapper .navigation-bar .pronia-logo {
+  width: 100px;
+  height: 50px;
+}
+.navigation .wrapper .navigation-bar .pronia-logo .cart-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.navigation .wrapper .navigation-bar .cart-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.banner {
+  background-color: #f6e4d1;
+}
+.banner .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner .wrapper .text-container,
+.banner .wrapper .image-container {
+  width: 50%;
+}
+
+.banner .wrapper .flower-pot {
+  height: 300px;
+  width: 300px;
 }
