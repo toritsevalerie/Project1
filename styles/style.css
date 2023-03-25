@@ -196,6 +196,7 @@ button {
 .lines {
   text-align: center;
   position: relative;
+  font-weight: bolder;
   max-width: 350px;
   margin: 30px auto;
   text-align: center;
@@ -285,4 +286,48 @@ button {
   margin-top: 60px;
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.pot-collections .title {
+  font-size: large;
+  font-weight: bold;
+}
+
+.pot-collection-1 {
+  background-image: url(../pronia-project/assets/b1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 600px;
+}
+
+.subheading {
+  text-align: left;
+  margin: 10px 40px;
+  padding-top: 60px;
+}
+
+.collection-buttons {
+  padding: 10px 25px;
+}
+
+.pot-collection-1 .title,
+.pot-collection-1 .collection-buttons {
+  text-align: left;
+  margin: 10px 40px;
+}
+
+.pot-collection-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../pronia-project/assets/b2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 250px;
 }
