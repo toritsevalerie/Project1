@@ -1,3 +1,4 @@
+$button-color: #abd373;
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,19 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: small;
   letter-spacing: 1.5px;
+}
+h1 {
+  font-size: 3.5rem;
+  margin: 10px 0px;
+}
+button {
+  color: #fff;
+  padding: 10px 20px;
+  background-color: $button-color;
+  margin-top: 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: smaller;
 }
 .wrapper {
   max-width: 900px;
@@ -77,8 +91,7 @@ body {
   background-color: #f6e4d1;
   .wrapper {
     display: flex;
-    .text-container,
-    .image-container {
+    .text-container .image-container {
       width: 50%;
     }
   }
@@ -86,9 +99,29 @@ body {
 
 .banner {
   .wrapper {
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      p {
+        margin-bottom: 10px 0px;
+      }
+      .subheading {
+        font-size: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.banner {
+  .wrapper {
     .flower-pot {
-      height: 300px;
-      width: 300px;
+      height: 400px;
+      width: 400px;
+    }
+    button {
+      max-width: fit-content;
     }
   }
 }
