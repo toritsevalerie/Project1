@@ -16,15 +16,12 @@ h1 {
 
 button {
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background-color: #abd373;
   margin-top: 30px;
   border: none;
   border-radius: 25px;
   font-size: smaller;
-}
-button:hover {
-  border: 1px solid black;
 }
 
 .wrapper {
@@ -46,8 +43,8 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .top-bar .wrapper div {
   display: -webkit-box;
@@ -66,11 +63,11 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navigation .wrapper .navigation-bar nav {
   padding: 10px 0px;
@@ -118,11 +115,11 @@ button:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .banner .wrapper .text-container p {
   margin-bottom: 10px 0px;
@@ -135,9 +132,63 @@ button:hover {
 .banner .wrapper .flower-pot {
   height: 400px;
   width: 400px;
+  padding: 40px 0px;
 }
 .banner .wrapper button {
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+}
+
+.benefits {
+  padding: 60px 0px;
+}
+.benefits .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.benefits .benefit-container1,
+.benefits .benefit-container2,
+.benefits .benefit-container3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 20px;
+  border: 2px #abd373 dotted;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.benefits img {
+  height: 30px;
+  width: 40px;
+}
+
+.benefit-icon1,
+.benefit-icon2,
+.benefit-icon3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.benefit-text1 p,
+.benefit-text2 p,
+.benefit-text3 p {
+  margin: 5px 0px;
+}
+
+.text-heading {
+  font-weight: bold;
 }
