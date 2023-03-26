@@ -1,0 +1,214 @@
+@use "variables" as v;
+.benefits {
+  padding: 60px 0px;
+  .wrapper {
+    display: flex;
+  }
+  .benefit-container1,
+  .benefit-container2,
+  .benefit-container3 {
+    display: flex;
+    flex-grow: 1;
+    margin: 20px;
+    border: 1px v.$button-color dashed;
+    padding: 10px 12px;
+    border-radius: 5px;
+  }
+}
+
+.benefits img {
+  height: 30px;
+  width: 40px;
+}
+
+.benefit-icon1,
+.benefit-icon2,
+.benefit-icon3 {
+  display: flex;
+  margin: 0px 10px;
+  justify-content: center;
+  align-items: center;
+}
+.benefit-text1,
+.benefit-text2,
+.benefit-text3 {
+  p {
+    margin: 5px 0px;
+  }
+}
+.text-heading {
+  font-weight: bold;
+}
+.lines {
+  text-align: center;
+  position: relative;
+  font-weight: bolder;
+  max-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+}
+.lines:before {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #abd373;
+}
+.lines:after {
+  content: " ";
+  display: block;
+  height: 2px;
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #abd373;
+}
+.product-categories {
+  display: flex;
+  justify-content: center;
+}
+.featured {
+  border: #abd373 dashed 1px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 10px;
+  a {
+    text-decoration: none;
+    color: v.$button-color;
+  }
+}
+
+.bestseller,
+.latest {
+  border: #c0c0c0 solid 1px;
+  padding: 10px 15px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 0px 10px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.product-items {
+  .card {
+    img {
+      height: 200px;
+      width: auto;
+    }
+  }
+}
+.product-items {
+  .card {
+    .add-to-cart- img {
+      height: 20px;
+      width: auto;
+      padding: 10px;
+      box-shadow: 0px 8px 20px #4c4c4c;
+    }
+    p {
+      margin: 10px 0px;
+      font-size: medium;
+    }
+  }
+}
+.container-text {
+  color: #abd373;
+  font-size: medium;
+}
+.product-items {
+  display: grid;
+  margin-top: 60px;
+  gap: 1.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.pot-collections {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  margin-top: 70px;
+}
+
+.pot-collections .title {
+  font-size: large;
+  font-weight: bold;
+}
+.pot-collection-1 {
+  grid-column: span 2;
+  background-image: url(../pronia-project/assets/b1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 600px;
+}
+.subheading {
+  text-align: left;
+  margin: 10px 40px;
+  padding-top: 60px;
+}
+
+.collection-buttons {
+  padding: 10px 25px;
+}
+
+.pot-collection-1 {
+  .title,
+  .collection-buttons {
+    text-align: left;
+    margin: 10px 40px;
+  }
+}
+.pot-collection-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  align-items: center;
+  background-image: url(../pronia-project/assets/b2.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 250px;
+}
+.pot-collection-2 .subheading {
+  text-align: left;
+  padding-top: 40px;
+}
+
+.pot-collection-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  align-items: center;
+  background-image: url(../pronia-project/assets/b3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 250px;
+}
+.pot-collection-3 {
+  .subheading {
+    padding-top: 40px;
+  }
+}
+.pot-collection-4 {
+  grid-column: span 2;
+  background-image: url(../pronia-project/assets/b4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 600px;
+}
+.pot-collection-4 {
+  .title,
+  .collection-buttons {
+    text-align: left;
+    margin: 10px 40px;
+  }
+}
