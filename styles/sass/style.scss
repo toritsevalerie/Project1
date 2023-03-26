@@ -254,11 +254,19 @@ button {
   gap: 1.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.pot-collections {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  margin-top: 70px;
+}
+
 .pot-collections .title {
   font-size: large;
   font-weight: bold;
 }
 .pot-collection-1 {
+  grid-column: span 2;
   background-image: url(../pronia-project/assets/b1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -285,9 +293,49 @@ button {
 .pot-collection-2 {
   display: flex;
   flex-direction: column;
+  align-items: start;
+
+  align-items: center;
   background-image: url(../pronia-project/assets/b2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
   width: 250px;
+}
+.pot-collection-2 .subheading {
+  text-align: left;
+  padding-top: 40px;
+}
+
+.pot-collection-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  align-items: center;
+  background-image: url(../pronia-project/assets/b3.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 250px;
+}
+.pot-collection-3 {
+  .subheading {
+    padding-top: 40px;
+  }
+}
+.pot-collection-4 {
+  grid-column: span 2;
+  background-image: url(../pronia-project/assets/b4.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  width: 600px;
+}
+.pot-collection-4 {
+  .title,
+  .collection-buttons {
+    text-align: left;
+    margin: 10px 40px;
+  }
 }
