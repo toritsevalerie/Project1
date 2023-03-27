@@ -212,3 +212,47 @@
     margin: 10px 40px;
   }
 }
+
+.blog {
+  p {
+    text-align: center;
+    padding: 0px 200px;
+    line-height: 20px;
+  }
+  img {
+    padding: 30px 20px;
+    height: 150px;
+    width: auto;
+  }
+}
+.blog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+.blog-post-1,
+.blog-post-2,
+.blog-post-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  background-color: #f6f7fb;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  width: 260px;
+  height: 400px;
+  margin: 10px;
+  .blog-title {
+    color: #abd373;
+  }
+  .blog-heading {
+    font-weight: bolder;
+    font-size: large;
+  }
+  p {
+    text-align: left;
+    padding: 10px 20px;
+  }
+}

@@ -390,3 +390,132 @@ button {
   text-align: left;
   margin: 10px 40px;
 }
+
+.blog p {
+  text-align: center;
+  padding: 0px 200px;
+  line-height: 20px;
+}
+.blog img {
+  padding: 30px 20px;
+  height: 150px;
+  width: auto;
+}
+
+.blog-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
+}
+
+.blog-post-1,
+.blog-post-2,
+.blog-post-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  background-color: #f6f7fb;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  width: 260px;
+  height: 400px;
+  margin: 10px;
+}
+.blog-post-1 .blog-title,
+.blog-post-2 .blog-title,
+.blog-post-3 .blog-title {
+  color: #abd373;
+}
+.blog-post-1 .blog-heading,
+.blog-post-2 .blog-heading,
+.blog-post-3 .blog-heading {
+  font-weight: bolder;
+  font-size: large;
+}
+.blog-post-1 p,
+.blog-post-2 p,
+.blog-post-3 p {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+footer {
+  background-image: url(../pronia-project/assets/footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+footer p {
+  font-size: smaller;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 80px 20px 10px 20px;
+}
+
+.footer-container .title {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-container p {
+  line-height: 20px;
+}
+
+.section-1 img {
+  width: auto;
+  height: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+}
+
+.section-5 .title {
+  margin-bottom: 5px;
+}
+.section-5 .title .number {
+  font-size: 18px;
+}
+
+.section-5 .number {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.social-media-container {
+  padding: 0px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+.facebook,
+.twitter,
+.pintrest,
+.dribble {
+  border: 1px solid #000000;
+  margin: 0px 5px;
+  padding: 5px 10px;
+}
