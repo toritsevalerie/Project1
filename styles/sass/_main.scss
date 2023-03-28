@@ -256,3 +256,59 @@
     padding: 10px 20px;
   }
 }
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.contact-info-container {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../pronia-project/assets/contact.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  width: 260px;
+  border-radius: 0%;
+}
+.contact-info-container {
+  .title {
+    padding: 40px 20px 10px 20px;
+  }
+}
+.contact-info-container {
+  .caption {
+    padding: 10px 20px 20px 20px;
+  }
+}
+.contact-info-container {
+  .number {
+    padding: 5px 20px 10px 20px;
+  }
+}
+.contact-information-form {
+  margin-bottom: 72px;
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 20px 40px 0px 40px;
+  }
+}
+
+form {
+  .item5 {
+    grid-column: span 2;
+    input {
+      width: 100%;
+    }
+  }
+}
+.form-button {
+  display: flex;
+  justify-content: end;
+  button {
+    margin: 30px 40px;
+  }
+}

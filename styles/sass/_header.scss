@@ -103,6 +103,13 @@
   background-image: url(../pronia-project/assets/contact-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-} h2 { 
-  
+  width: auto;
+  height: 200px;
+}
+
+.contact-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
