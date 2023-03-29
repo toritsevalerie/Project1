@@ -106,10 +106,10 @@
 .product-items {
   .card {
     .add-to-cart- img {
-      height: 20px;
+      height: 30px;
       width: auto;
-      padding: 10px;
-      box-shadow: 0px 8px 20px #4c4c4c;
+      padding: 5px;
+      box-shadow: 0px 2px 7px #4c4c4c;
     }
     p {
       margin: 10px 0px;
@@ -128,9 +128,11 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .pot-collections {
-  display: grid;
-  gap: 0.4rem;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  padding-right: 5px;
+  gap: 15px;
   margin-top: 70px;
 }
 
@@ -257,13 +259,13 @@
   }
 }
 .form {
-  width: 740px;
+  width: 584px;
   height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  box-shadow: 1px 1px 28px #4c4c4c;
+  margin: 50px auto;
+  box-shadow: 1px 1px 8px #868686;
 }
 .contact-info-container {
   display: flex;

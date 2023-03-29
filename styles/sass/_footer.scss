@@ -17,8 +17,8 @@ footer {
 
 .footer-container {
   .title {
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
   }
 }
 .footer-container {
@@ -44,7 +44,7 @@ footer {
 }
 .section-5 {
   .number {
-    font-size: 15px;
+    font-size: 12px;
     margin-bottom: 10px;
   }
 }
@@ -64,5 +64,13 @@ footer {
 .copy-right {
   p {
     text-align: center;
+    padding: 0px 15px 15px 15px;
+    font-size: 14px;
+    color: #abd373;
   }
+}
+hr {
+  margin: 40px auto 20px auto;
+  width: 850px;
+  color: #abd373;
 }
