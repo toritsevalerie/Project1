@@ -286,6 +286,13 @@ button {
   font-size: smaller;
 }
 
+button:hover {
+  background-color: #8db653;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .wrapper {
   max-width: 900px;
   width: 90%;
