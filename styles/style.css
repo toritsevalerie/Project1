@@ -478,6 +478,8 @@ button {
 }
 
 .form {
+  width: 740px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -487,7 +489,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 50px;
+  margin: 50px;
+  -webkit-box-shadow: 1px 1px 28px #4c4c4c;
+          box-shadow: 1px 1px 28px #4c4c4c;
 }
 
 .contact-info-container {
@@ -508,23 +512,38 @@ button {
 
 .contact-info-container .title {
   padding: 40px 20px 10px 20px;
+  color: white;
+  font-size: large;
+  font-weight: bold;
 }
 
 .contact-info-container .caption {
   padding: 10px 20px 20px 20px;
+  color: white;
 }
 
 .contact-info-container .number {
   padding: 5px 20px 10px 20px;
+  color: white;
+}
+
+.contact-info-container .address {
+  padding: 0px 20px 10px 20px;
+  color: white;
+}
+
+.contact-info-container .email {
+  padding: 0px 20px 20px 20px;
+  color: white;
 }
 
 .contact-information-form {
-  margin-bottom: 72px;
+  margin-bottom: 0px;
 }
 .contact-information-form form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  gap: 1rem;
   margin: 20px 40px 0px 40px;
 }
 
@@ -544,7 +563,57 @@ form .item5 input {
           justify-content: end;
 }
 .form-button button {
-  margin: 30px 40px;
+  margin: 16px 40px;
+  border-radius: 5px;
+}
+
+.item1 input,
+.item2 input,
+.item3 input,
+.item4 input,
+.item5 input {
+  width: 100%;
+  padding: 12px 4px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-bottom: 0.2px solid #4c4c4c;
+}
+
+.item5 input {
+  height: 100px;
+  width: 100%;
+}
+
+input::-webkit-input-placeholder {
+  font-style: italic;
+  opacity: 0.5;
+  color: #4c4c4c;
+}
+
+input::-moz-placeholder {
+  font-style: italic;
+  opacity: 0.5;
+  color: #4c4c4c;
+}
+
+input:-ms-input-placeholder {
+  font-style: italic;
+  opacity: 0.5;
+  color: #4c4c4c;
+}
+
+input::-ms-input-placeholder {
+  font-style: italic;
+  opacity: 0.5;
+  color: #4c4c4c;
+}
+
+input::placeholder {
+  font-style: italic;
+  opacity: 0.5;
+  color: #4c4c4c;
 }
 
 footer {
@@ -609,4 +678,8 @@ footer p {
   border: 1px solid #000000;
   margin: 0px 5px;
   padding: 5px 10px;
+}
+
+.copy-right p {
+  text-align: center;
 }
