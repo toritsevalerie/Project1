@@ -360,3 +360,71 @@ input::placeholder {
   opacity: 0.5;
   color: #4c4c4c;
 }
+@media (max-width: 972px) {
+  .pot-collections {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (max-width: 834px) {
+  .blog p {
+    padding: 0px 50px;
+  }
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    .blog-post-1,
+    .blog-post-2,
+    .blog-post-3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: 350px;
+      p {
+        text-align: center;
+      }
+      img {
+        padding: 6px 20px;
+      }
+    }
+  }
+}
+@media (max-width: 776px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 375px) {
+  .top-bar .wrapper div {
+    display: inline;
+  }
+  .navigation .wrapper .navigation-bar .pronia-logo {
+    width: auto;
+    height: 24px;
+    margin-bottom: 11px;
+  }
+  .banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .text-container {
+    margin: 10px 0px;
+  }
+  .banner .wrapper .text-container .subheading-banner {
+    text-align: center;
+  }
+  .benefits .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

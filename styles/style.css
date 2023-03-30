@@ -299,6 +299,11 @@ button:hover {
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .top-bar {
   background-color: #abd373;
   font-family: "Rubik", sans-serif;
@@ -393,9 +398,11 @@ button:hover {
 .banner .wrapper .text-container p {
   margin-bottom: 10px 0px;
 }
-.banner .wrapper .text-container .subheading {
+.banner .wrapper .text-container .subheading-banner {
   font-size: 2rem;
   font-weight: 300;
+  text-align: left;
+  margin: 10px 0px;
 }
 
 .banner .wrapper .flower-pot {
@@ -890,6 +897,113 @@ input::placeholder {
   color: #4c4c4c;
 }
 
+@media (max-width: 972px) {
+  .pot-collections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 834px) {
+  .blog p {
+    padding: 0px 50px;
+  }
+  .blog-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-container .blog-post-1,
+  .blog-container .blog-post-2,
+  .blog-container .blog-post-3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    height: 350px;
+  }
+  .blog-container .blog-post-1 p,
+  .blog-container .blog-post-2 p,
+  .blog-container .blog-post-3 p {
+    text-align: center;
+  }
+  .blog-container .blog-post-1 img,
+  .blog-container .blog-post-2 img,
+  .blog-container .blog-post-3 img {
+    padding: 6px 20px;
+  }
+}
+@media (max-width: 776px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 30px;
+  }
+}
+@media (max-width: 375px) {
+  .top-bar .wrapper div {
+    display: inline;
+  }
+  .navigation .wrapper .navigation-bar .pronia-logo {
+    width: auto;
+    height: 24px;
+    margin-bottom: 11px;
+  }
+  .banner .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .text-container {
+    margin: 10px 0px;
+  }
+  .banner .wrapper .text-container .subheading-banner {
+    text-align: center;
+  }
+  .benefits .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer {
   background-image: url(../pronia-project/assets/footer.jpg);
   background-size: cover;
