@@ -74,3 +74,18 @@ hr {
   width: 850px;
   color: #abd373;
 }
+@media (max-width: 834px) {
+  hr {
+    width: 613px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 20px 10px 20px;
+  }
+  hr {
+    width: 270px;
+  }
+}

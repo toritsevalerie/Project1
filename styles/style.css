@@ -699,9 +699,11 @@ img {
   line-height: 20px;
 }
 .blog img {
-  padding: 30px 20px;
-  height: 150px;
-  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 75%;
 }
 
 .blog-container {
@@ -943,7 +945,11 @@ input::placeholder {
   .blog-container .blog-post-1 img,
   .blog-container .blog-post-2 img,
   .blog-container .blog-post-3 img {
-    padding: 6px 20px;
+    display: block;
+    width: 40%;
+  }
+  .blog-heading {
+    margin: 10px 0px;
   }
 }
 @media (max-width: 776px) {
@@ -1002,6 +1008,54 @@ input::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
+  }
+  .pot-collection-2,
+  .pot-collection-3 {
+    width: 327.5px;
+  }
+  .pot-collection-1,
+  .pot-collection-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pot-collection-1 .subheading,
+  .pot-collection-4 .subheading {
+    padding-top: 40px;
+  }
+  .pot-collection-1 .collection-buttons,
+  .pot-collection-4 .collection-buttons {
+    margin-top: 20px;
+  }
+  .pot-collection-1 .title,
+  .pot-collection-4 .title {
+    margin: 0px 40px 10px 40px;
+  }
+  .blog-container .blog-post-1,
+  .blog-container .blog-post-2,
+  .blog-container .blog-post-3 {
+    width: 300px;
+    height: 370px;
+  }
+  .blog-container .blog-post-1 img,
+  .blog-container .blog-post-2 img,
+  .blog-container .blog-post-3 img {
+    width: 60%;
   }
 }
 footer {
@@ -1079,4 +1133,20 @@ hr {
   margin: 40px auto 20px auto;
   width: 850px;
   color: #abd373;
+}
+
+@media (max-width: 834px) {
+  hr {
+    width: 613px;
+  }
+}
+@media (max-width: 375px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 20px 10px 20px;
+  }
+  hr {
+    width: 270px;
+  }
 }
