@@ -115,3 +115,31 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 375px) {
+  .top-bar .wrapper div {
+    display: inline;
+  }
+  .navigation .wrapper .navigation-bar .pronia-logo {
+    width: auto;
+    height: 24px;
+    margin-bottom: 11px;
+  }
+  .banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner .text-container {
+    margin: 10px 0px;
+  }
+  .banner .wrapper .text-container .subheading-banner {
+    text-align: center;
+  }
+}

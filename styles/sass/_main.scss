@@ -368,6 +368,7 @@ input::placeholder {
     justify-content: center;
   }
 }
+
 @media (max-width: 834px) {
   .blog p {
     padding: 0px 50px;
@@ -403,32 +404,35 @@ input::placeholder {
     margin: 0px 30px;
   }
 }
-@media (max-width: 375px) {
-  .top-bar .wrapper div {
-    display: inline;
-  }
-  .navigation .wrapper .navigation-bar .pronia-logo {
-    width: auto;
-    height: 24px;
-    margin-bottom: 11px;
-  }
-  .banner .wrapper {
+@media (max-width: 653px) {
+  .contact-main .form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 1px 1px 8px #868686;
+    width: auto;
+    height: 570px;
+    .contact-info-container,
+    .contact-information-form {
+      display: block;
+      width: 100%;
+    }
   }
-  .text-container {
+}
+@media (max-width: 495px) {
+  .benefits .wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
   }
-  .banner .text-container {
-    margin: 10px 0px;
+}
+@media (max-width: 397px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
   }
-  .banner .wrapper .text-container .subheading-banner {
-    text-align: center;
-  }
+}
+
+@media (max-width: 375px) {
   .benefits .wrapper {
     display: flex;
     flex-direction: column;
@@ -466,5 +470,12 @@ input::placeholder {
     img {
       width: 60%;
     }
+  }
+  .contact-main .form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 8px #868686;
+    width: 260px;
+    height: 570px;
   }
 }

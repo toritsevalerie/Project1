@@ -437,6 +437,48 @@ img {
           align-items: center;
 }
 
+@media (max-width: 375px) {
+  .top-bar .wrapper div {
+    display: inline;
+  }
+  .navigation .wrapper .navigation-bar .pronia-logo {
+    width: auto;
+    height: 24px;
+    margin-bottom: 11px;
+  }
+  .banner .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner .text-container {
+    margin: 10px 0px;
+  }
+  .banner .wrapper .text-container .subheading-banner {
+    text-align: center;
+  }
+}
 .benefits {
   padding: 60px 0px;
 }
@@ -959,16 +1001,8 @@ input::placeholder {
     margin: 0px 30px;
   }
 }
-@media (max-width: 375px) {
-  .top-bar .wrapper div {
-    display: inline;
-  }
-  .navigation .wrapper .navigation-bar .pronia-logo {
-    width: auto;
-    height: 24px;
-    margin-bottom: 11px;
-  }
-  .banner .wrapper {
+@media (max-width: 653px) {
+  .contact-main .form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -976,30 +1010,36 @@ input::placeholder {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-shadow: 1px 1px 8px #868686;
+            box-shadow: 1px 1px 8px #868686;
+    width: auto;
+    height: 570px;
   }
-  .text-container {
+  .contact-main .form .contact-info-container,
+  .contact-main .form .contact-information-form {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 495px) {
+  .benefits .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .banner .text-container {
-    margin: 10px 0px;
+}
+@media (max-width: 397px) {
+  .product-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 30px;
   }
-  .banner .wrapper .text-container .subheading-banner {
-    text-align: center;
-  }
+}
+@media (max-width: 375px) {
   .benefits .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1056,6 +1096,19 @@ input::placeholder {
   .blog-container .blog-post-2 img,
   .blog-container .blog-post-3 img {
     width: 60%;
+  }
+  .contact-main .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-shadow: 1px 1px 8px #868686;
+            box-shadow: 1px 1px 8px #868686;
+    width: 260px;
+    height: 570px;
   }
 }
 footer {
