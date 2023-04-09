@@ -802,6 +802,12 @@ img {
   padding: 10px 20px;
 }
 
+.contact-main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .form {
   width: 584px;
   height: 350px;
@@ -814,24 +820,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px auto;
+  margin: 50px 0px;
   -webkit-box-shadow: 1px 1px 8px #868686;
           box-shadow: 1px 1px 8px #868686;
 }
 
 .contact-info-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-image: url(../pronia-project/assets/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
   width: 260px;
+  margin: 50px 0px;
   border-radius: 0%;
 }
 
@@ -869,7 +869,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin: 20px 40px 0px 40px;
+  width: 390px;
+  padding: 14px;
 }
 
 form .item5 {
@@ -880,16 +881,21 @@ form .item5 input {
 }
 
 .form-button {
+  grid-column: 1/3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
 }
-.form-button button {
-  margin: 16px 40px;
+
+button {
+  margin: 16px 0px;
   border-radius: 5px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .item1 input,
@@ -939,6 +945,15 @@ input::placeholder {
   font-style: italic;
   opacity: 0.5;
   color: #4c4c4c;
+}
+
+.error_message {
+  color: rgb(128, 0, 0);
+  font-size: small;
+}
+
+.success_message input {
+  border-color: rgb(19, 128, 0);
 }
 
 @media (max-width: 972px) {
